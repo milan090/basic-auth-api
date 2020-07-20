@@ -62,14 +62,12 @@ const isAuth = (req,res,next) => {
   }
 }
 
-
 // Routes
 app.post('/register', (req,res) => registerHandler(req,res,db,bcrypt));
 app.post('/login', (req,res) => loginHandler(req,res,db,bcrypt));
 
 app.get('/isAuthenticated', isAuth, (req,res) => {
   res.json({message: "You are authenticated"});
-  
 })
 
 app.get('/logout', isAuth, (req,res) => {
