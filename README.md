@@ -12,4 +12,8 @@ I was making the same thing again and again so I decided to make a basic api whi
   - [knex](https://github.com/knex/knex)
   - [pg](https://github.com/brianc/node-postgres)
   - [bcrypt](https://github.com/kelektiv/node.bcrypt.js/)
+  - [nodemon](https://github.com/remy/nodemon)
 
+## Things you need to edit
+  - Edit the .env file (PORT and database credentials)
+  - Package.json
